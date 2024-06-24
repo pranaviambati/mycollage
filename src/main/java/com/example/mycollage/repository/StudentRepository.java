@@ -1,4 +1,4 @@
-cat <<EOL > mycollage/src/main/java/com/example/mycollage/repository/StudentRepository.java
+cat <<EOL > src/main/java/com/example/mycollage/repository/StudentRepository.java
 package com.example.mycollage.repository;
 
 import org.springframework.data.repository.CrudRepository;
