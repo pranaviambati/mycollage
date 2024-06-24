@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>My Collage</title>
+</head>
+<body>
+    <h1>Student List</h1>
+    <form action="/" method="get">
+        <input type="text" name="search" placeholder="Search by name">
+        <button type="submit">Search</button>
+    </form>
+    <table border="1">
+        <tr>
+            <th>S.NO</th>
+            <th>Student Name</th>
+            <th>Branch</th>
+            <th>Year</th>
+            <th>Remarks</th>
+        </tr>
+        <tr th:each="student, iterStat : ${students}">
+            <td th:text="${iterStat.count}">1</td>
+            <td th:text="${student.name}">Name</td>
+            <td th:text="${student.branch}">Branch</td>
+            <td th:text="${student.year}">Year</td>
+            <td th:text="${student.remarks}">Remarks</td>
+        </tr>
+    </table>
+</body>
+</html>
