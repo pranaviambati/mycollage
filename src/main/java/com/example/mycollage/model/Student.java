@@ -1,3 +1,4 @@
+cat <<EOL > mycollage/src/main/java/com/example/mycollage/model/Student.java
 package com.example.mycollage.model;
 
 import javax.persistence.Entity;
@@ -18,3 +19,4 @@ public class Student {
 
     // Getters and Setters
 }
+EOL
