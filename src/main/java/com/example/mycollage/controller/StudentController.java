@@ -1,4 +1,4 @@
-cat <<EOL > mycollage/src/main/java/com/example/mycollage/controller/StudentController.java
+cat <<EOL > src/main/java/com/example/mycollage/controller/StudentController.java
 package com.example.mycollage.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
