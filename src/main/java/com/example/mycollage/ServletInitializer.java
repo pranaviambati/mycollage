@@ -1,4 +1,4 @@
-cat <<EOL > mycollage/src/main/java/com/example/mycollage/ServletInitializer.java
+cat <<EOL > src/main/java/com/example/mycollage/ServletInitializer.java
 package com.example.mycollage;
 
 import org.springframework.boot.builder.SpringApplicationBuilder;
