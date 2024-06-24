@@ -1,4 +1,4 @@
-cat <<EOL > mycollage/src/main/resources/templates/index.html
+cat <<EOL > src/main/resources/templates/index.html
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
@@ -18,12 +18,12 @@ cat <<EOL > mycollage/src/main/resources/templates/index.html
             <th>Year</th>
             <th>Remarks</th>
         </tr>
-        <tr th:each="student, iterStat : ${students}">
-            <td th:text="${iterStat.count}">1</td>
-            <td th:text="${student.name}">Name</td>
-            <td th:text="${student.branch}">Branch</td>
-            <td th:text="${student.year}">Year</td>
-            <td th:text="${student.remarks}">Remarks</td>
+        <tr th:each="student, iterStat : \${students}">
+            <td th:text="\${iterStat.count}">1</td>
+            <td th:text="\${student.name}">Name</td>
+            <td th:text="\${student.branch}">Branch</td>
+            <td th:text="\${student.year}">Year</td>
+            <td th:text="\${student.remarks}">Remarks</td>
         </tr>
     </table>
 </body>
