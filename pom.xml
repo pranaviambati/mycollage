@@ -1,12 +1,11 @@
-
-cat <<EOL > mycollage/pom.xml
+cat <<EOL > pom.xml
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.example</groupId>
     <artifactId>mycollage</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <packaging>war</packaging> <!-- Change from jar to war -->
+    <packaging>war</packaging>
 
     <name>mycollage</name>
     <description>My Collage Application</description>
@@ -38,7 +37,7 @@ cat <<EOL > mycollage/pom.xml
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-tomcat</artifactId>
-            <scope>provided</scope> <!-- Add this dependency with provided scope -->
+            <scope>provided</scope>
         </dependency>
         <dependency>
             <groupId>com.h2database</groupId>
