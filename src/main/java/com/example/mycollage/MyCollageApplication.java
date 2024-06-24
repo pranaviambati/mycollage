@@ -1,3 +1,4 @@
+cat <<EOL > mycollage/src/main/java/com/example/mycollage/MyCollageApplication.java
 package com.example.mycollage;
 
 import org.springframework.boot.SpringApplication;
@@ -10,3 +11,4 @@ public class MyCollageApplication {
         SpringApplication.run(MyCollageApplication.class, args);
     }
 }
+EOL
